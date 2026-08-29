@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-08-29T20:04:47.870600+00:00",
+  "hosts": [
+    {
+      "ip": "192.168.56.101",
+      "hostname": "metasploitable.local",
+      "services": [
+        {
+          "port": "21",
+          "protocol": "tcp",
+          "service": "ftp",
+          "product": "vsftpd",
+          "version": "2.3.4",
+          "cves": [
+            {
+              "id": "CVE-2011-2523",
+              "description": "vsftpd 2.3.4 downloaded between 20110630 and 20110703 contains a backdoor which opens a shell on port 6200/tcp.",
+              "cvss_score": 9.8,
+              "severity": "CRITICAL"
+            }
+          ]
+        },
+        {
+          "port": "22",
+          "protocol": "tcp",
+          "service": "ssh",
+          "product": "OpenSSH",
+          "version": "4.7p1 Debian 8ubuntu1",
+          "cves": []
+        },
+        {
+          "port": "80",
+          "protocol": "tcp",
+          "service": "http",
+          "product": "Apache httpd",
+          "version": "2.2.8",
+          "cves": []
+        },
+        {
+          "port": "3306",
+          "protocol": "tcp",
+          "service": "mysql",
+          "product": "MySQL",
+          "version": "5.0.51a-3ubuntu5",
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "by_severity": {
+      "CRITICAL": 1,
+      "HIGH": 0,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "UNKNOWN": 0
+    },
+    "total_cves": 1,
+    "flagged_services": 1
+  }
+}

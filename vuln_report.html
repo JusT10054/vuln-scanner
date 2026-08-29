@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vulnerability Scan Report</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Arial, sans-serif; background:#f5f6f8; color:#222; margin:0; padding:2rem; }
+  h1 { margin-bottom:0.2rem; }
+  .meta { color:#666; margin-bottom:1.5rem; }
+  .summary { display:flex; gap:1rem; margin-bottom:2rem; flex-wrap:wrap; }
+  .card { background:#fff; border-radius:8px; padding:1rem 1.5rem; box-shadow:0 1px 3px rgba(0,0,0,0.1); text-align:center; min-width:100px; }
+  .card .num { font-size:1.8rem; font-weight:700; }
+  .card .label { font-size:0.85rem; font-weight:600; letter-spacing:0.05em; }
+  .host { background:#fff; border-radius:8px; padding:1.2rem 1.5rem; margin-bottom:1.5rem; box-shadow:0 1px 3px rgba(0,0,0,0.1); }
+  .host h2 { margin-top:0; border-bottom:1px solid #eee; padding-bottom:0.5rem; }
+  .service h3 { font-size:1rem; margin-bottom:0.4rem; }
+  table { width:100%; border-collapse:collapse; margin-bottom:1.2rem; font-size:0.9rem; }
+  th, td { text-align:left; padding:0.4rem 0.6rem; border-bottom:1px solid #eee; vertical-align:top; }
+  th { background:#fafafa; }
+  .cveid { font-family:monospace; white-space:nowrap; }
+  .desc { color:#444; }
+  .none { color:#888; font-style:italic; }
+  .badge { color:#fff; padding:0.15rem 0.5rem; border-radius:4px; font-size:0.75rem; font-weight:700; }
+</style>
+</head>
+<body>
+  <h1>Vulnerability Scan Report</h1>
+  <div class="meta">Generated: 2026-08-29T20:04:47.870600+00:00</div>
+  <div class="summary">
+    <div class="card"><div class="num">1</div><div class="label">SERVICES FLAGGED</div></div>
+    <div class="card"><div class="num">1</div><div class="label">TOTAL CVEs</div></div>
+    <div class="card"><div class="num">1</div><div class="label" style="color:#8b0000">CRITICAL</div></div><div class="card"><div class="num">0</div><div class="label" style="color:#d9534f">HIGH</div></div><div class="card"><div class="num">0</div><div class="label" style="color:#f0ad4e">MEDIUM</div></div><div class="card"><div class="num">0</div><div class="label" style="color:#5bc0de">LOW</div></div><div class="card"><div class="num">0</div><div class="label" style="color:#888888">UNKNOWN</div></div>
+  </div>
+  <div class="host"><h2>Host: 192.168.56.101 (metasploitable.local)</h2><div class="service"><h3>21/tcp — ftp (vsftpd 2.3.4)</h3><table><tr><th>Severity</th><th>CVE ID</th><th>CVSS</th><th>Description</th></tr><tr><td><span class="badge" style="background:#8b0000">CRITICAL</span></td><td class='cveid'>CVE-2011-2523</td><td>9.8</td><td class='desc'>vsftpd 2.3.4 downloaded between 20110630 and 20110703 contains a backdoor which opens a shell on port 6200/tcp.</td></tr></table></div><div class="service"><h3>22/tcp — ssh (OpenSSH 4.7p1 Debian 8ubuntu1)</h3><table><tr><th>Severity</th><th>CVE ID</th><th>CVSS</th><th>Description</th></tr><tr><td colspan="4" class="none">No CVE matches found</td></tr></table></div><div class="service"><h3>80/tcp — http (Apache httpd 2.2.8)</h3><table><tr><th>Severity</th><th>CVE ID</th><th>CVSS</th><th>Description</th></tr><tr><td colspan="4" class="none">No CVE matches found</td></tr></table></div><div class="service"><h3>3306/tcp — mysql (MySQL 5.0.51a-3ubuntu5)</h3><table><tr><th>Severity</th><th>CVE ID</th><th>CVSS</th><th>Description</th></tr><tr><td colspan="4" class="none">No CVE matches found</td></tr></table></div></div>
+</body>
+</html>
