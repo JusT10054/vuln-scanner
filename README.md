@@ -46,8 +46,7 @@ python main.py 192.168.56.101 --api-key YOUR_NVD_API_KEY
 python main.py --offline-xml sample_scan.xml
 ```
 
-Get a free NVD API key at https://nvd.nist.gov/developers/request-an-api-key
-(optional, but recommended if you're scanning more than a few services).
+
 
 ### Output
 
@@ -79,7 +78,7 @@ vuln_scanner/
 └── requirements.txt
 ```
 
-## Known limitations (worth mentioning in interviews)
+## Known limitations
 
 - Matching is keyword-based (`product + version` sent to NVD's
   `keywordSearch`), not CPE-based — this is simpler to implement but can
